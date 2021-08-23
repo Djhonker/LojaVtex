@@ -1,0 +1,251 @@
+{
+  "store.home": { 
+    "blocks": [
+      "tab-layout#home",
+      "list-context.image-list#demo",
+      "search-result-layout.customQuery#home"
+    ]
+  },
+
+  "search-result-layout.customQuery#home": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 12
+      }
+  },
+  "blocks":[
+    "search-result-layout.desktop#lp","search-result-layout.mobile"
+  ]
+  },
+
+  "search-result-layout.desktop#lp":{
+    "children": [
+      //"flex-layout.row#searchbread",
+      //"flex-layout.row#searchtitle",
+      "search-content#lp"
+    ],
+    "props": {
+      "preventRouteChange": true
+    }
+  },
+
+   "search-content#lp":{
+      "blocks":[
+        "gallery","not-found"
+    ]
+   },
+
+  "tab-layout#home": {
+    "children": [
+      "tab-list#home",
+      "tab-content#home"
+    ]
+  },
+
+  "tab-list#home": {
+    "children": [
+      "tab-list.item#home1",
+      "tab-list.item#home2",
+      "tab-list.item#home3",
+      "tab-list.item#home4",
+      "tab-list.item#home5",
+      "tab-list.item#home6",
+      "tab-list.item#home7"
+
+      ]
+  },
+  "tab-content#home": {
+    "children": [
+      "tab-content.item#home1",
+      "tab-content.item#home2",
+      "tab-content.item#home3",
+      "tab-content.item#home4",
+      "tab-content.item#home5",
+      "tab-content.item#home6",
+      "tab-content.item#home7"
+      ]
+  },
+
+  "tab-list.item#home1": {
+    "props": {
+      "tabId": "idhome",
+      "label": "INICIO",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#home2": {
+    "props": {
+      "tabId": "ideletronicos",
+      "label": "ELETRONICOS"
+    }
+  },
+  "tab-list.item#home3": {
+    "props": {
+      "tabId": "idacessorios",
+      "label": "ACESSORIOS"
+    }
+  },
+  "tab-list.item#home4": {
+    "props": {
+      "tabId": "idcalcados",
+      "label": "CALÇADOS"
+    }
+  },
+  "tab-list.item#home5": {
+    "props": {
+      "tabId": "idcamisetas",
+      "label": "CAMISETAS"
+    }
+  },
+  "tab-list.item#home6": {
+    "props": {
+      "tabId": "idwhats",
+      "label": "WHATSAPP"
+    }
+  },
+  "tab-list.item#home7": {
+    "props": {
+      "tabId": "idform",
+      "label": "PROMOCAO"
+    }
+  },
+  "tab-content.item#home1": {
+    "children": [
+      "rich-text#1"
+    ],
+    "props": {
+      "tabId": "idhome"
+    }
+  },
+  "tab-content.item#home2": {
+    "children": [
+      "rich-text#2"
+    ],
+    "props": {
+      "tabId": "ideletronicos"
+    }
+  },
+  "tab-content.item#home3": {
+    "children": [
+      "rich-text#3"
+    ],
+    "props": {
+      "tabId": "idacessorios"
+    }
+  },
+  "tab-content.item#home4": {
+    "children": [
+      "rich-text#4"
+    ],
+    "props": {
+      "tabId": "idcalcados"
+    }
+  },
+  "tab-content.item#home5": {
+    "children": [
+      "rich-text#5"
+    ],
+    "props": {
+      "tabId": "idcamisetas"
+    }
+  },
+  "tab-content.item#home6": {
+    "children": [
+      "rich-text#6"
+    ],
+    "props": {
+      "tabId": "idwhats"
+    }
+  },
+  "tab-content.item#home7": {
+    "children": [
+      "rich-text#7"
+    ],
+    "props": {
+      "tabId": "idform"
+    }
+  },
+  "rich-text#1": {
+    "props": {
+      "text": "INICIO",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#2": {
+    "props": {
+      "text": "ELETRONICOS",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#3": {
+    "props": {
+      "text": "ACESSORIOS",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#4": {
+    "props": {
+      "text": "CALÇADOS",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#5": {
+    "props": {
+      "text": "CAMISETAS",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#6": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[CLIQUE AQUI PARA ENTRAR EM CONTATO CONOSCO!](https://api.whatsapp.com/send?phone=5511948322756&text=Ola%2C%20Diego%3F)\n*Be Bold!*\n**This is italic**",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+  "rich-text#7": {
+    "props": {
+      "text": "PROMOCAO",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 520,
+      "images": [
+        {
+          "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T143717Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=ff79e2771f4732d3d82608917e30590689a6eb21c3589a9f448c826db5e703e4",
+        "mobileImage": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T143717Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=ff79e2771f4732d3d82608917e30590689a6eb21c3589a9f448c826db5e703e4"
+        },
+        {
+          "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T143717Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=08ff9f3b6ee101fb94bb1cac1bf2a838a1bf4f9d3c3a3b5ed7518579b2c1dcab",
+          "mobileImage": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T143717Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=08ff9f3b6ee101fb94bb1cac1bf2a838a1bf4f9d3c3a3b5ed7518579b2c1dcab"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  }
+}
